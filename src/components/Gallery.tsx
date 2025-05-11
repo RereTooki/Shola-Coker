@@ -7,6 +7,7 @@ import port5 from "../assets/images/port5.png";
 import port6 from "../assets/images/port6.png";
 import port7 from "../assets/images/port7.png";
 import port8 from "../assets/images/port8.png";
+import { Link } from "react-router-dom";
 
 const categories = ["All", "Childhood", "Family and friends", "DSA", "Shola ♡"];
 
@@ -163,7 +164,7 @@ const Gallery = () => {
         {/* Floating Button */}
 
         <button className="flex items-center justify-center gap-2 px-6 py-2 rounded-full text-[10px] tab:text-xs text-white border-[#B79D52] mt-4 fixed bottom-4 animate-pulses backdrop-blur-sm backdrop-invert mix-blend-differences bg-[#852F72]/60 z-40 right-2 md:right-4 transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] h-16 w-16 tab:h-20 tab:w-20 lg:h-24 lg:w-24 z-10">
-          Send a birthday wish
+          <Link to="/wishme">Send a Birthday Wish</Link>
         </button>
 
         {/* <button className="fixed bottom-6 right-6 bg-[#7E1465] text-white px-4 py-2 rounded-full shadow-lg  text-sm">

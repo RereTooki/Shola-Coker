@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Define types for props
 type NavigationBarProps = {
   projectsRef: React.RefObject<HTMLDivElement>;
@@ -22,7 +23,7 @@ const Landing: React.FC<NavigationBarProps> = ({ projectsRef }) => {
           OLUSHOLA COKER
         </div>
         <div className="sborder-2 interFont text-[#F4EFEF] bg-gradient-to-r from-[#411E31] from-5% to-[#863373]  bg-[#411E31]s  text-sm lg:text-base xl:text-lgs font-medium p-3 tab:p-4 rounded-lg transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] animate-pulses">
-          Send a birthday wish
+          <Link to="/wishme">Send a Birthday Wish</Link>
         </div>
         <div
           className="text-base md:text-[4.5vw] xmd:text-lg lg:hidden lg:text-xl xl:text-2xl  sborder-4 whitespace-nowrap absolute sborder-4 bottom-2 md:bottom-4 lg:tracking-wider text-center self-center animate-bounce select-none hover:underline underline-offset-4 decoration-dotted"
