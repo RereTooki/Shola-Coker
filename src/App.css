@@ -118,3 +118,47 @@
   /* background-color: rgb(38, 49, 57); color of the scroll thumb  */
   border-color: rgb(234, 223, 232);
 }
+
+/*Dotted BG*/
+
+.aboutMeGrad {
+  background: linear-gradient(#ffe3f933, #ffe3f933),
+    url(./assets/images/bg1.png);
+
+  backdrop-filter: blur(140px);
+}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .aboutMeGrad {
+    background-image: url("./assets/images/bg1.png");
+    background-size: cover;
+  }
+}
+/**/
+@media (min-width: 566px) {
+  /*Tablets and above*/
+  .aboutMeGrad {
+    background: linear-gradient(#ffe3f933, #ffe3f933),
+      url(./assets/images/bg1.png);
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 565px) {
+  .aboutMeGrad {
+    background: linear-gradient(#ffe3f933, #ffe3f933),
+      url(./assets/images/bg1.png);
+  }
+}
+
+/* Ensure dark mode styles also apply when the .dark class is present */
+.dark .aboutMeGrad {
+  background-image: url("./assets/images/bg1.png");
+  background-size: cover;
+}
+
+@media (min-width: 566px) {
+  /* Ensure dark mode styles also apply when .dark class is present on larger screens */
+  .dark .aboutMeGrad {
+    background: linear-gradient(#ffe3f933, #ffe3f933),
+      url(./assets/images/bg1.png);
+  }
+}

@@ -15,7 +15,7 @@ const Landing: React.FC<NavigationBarProps> = ({ projectsRef }) => {
 
   return (
     <>
-      <div className="h-dvh lg:h-[75vh] border-4 lg:border-b-0 border-[#411E31] border-double bg-[#FFE3F933] flex flex-col gap-4 md:gap-2 lg:gap-8 justify-center items-center px-2 lg:px-8 shadow-md shadow-[#7E14651A]">
+      <div className="h-dvh lg:h-[75vh] border-4 lg:border-b-0 border-[#411E31] border-double bg-[#FFE3F933]s aboutMeGrad flex flex-col gap-4 md:gap-2 lg:gap-8 justify-center items-center px-2 lg:px-8 shadow-md shadow-[#7E14651A]">
         <div className="sborder-2 instruFont text-[#676565] text-sm md:text-[2.5vw]  lg:text-xl xl:text-2xl">
           June 28 1985
         </div>
