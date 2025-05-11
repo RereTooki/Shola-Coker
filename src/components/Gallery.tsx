@@ -96,7 +96,7 @@ const Gallery = () => {
         {/* Header */}
         <div className="flex flex-col tab:flex-row justify-between items-start tab:items-center mb-8 gap-4">
           {/* Title section */}
-          <div className="sborder-4">
+          <div className="sborder-4 w3-animate-left">
             <div className="flex items-center mb-1 text-sm text-gray-600 font-medium">
               <div className="w-full h-0.5 bg-[#150061] mr-2" />
               <div className="whitespace-nowrap instruFont lg:text-base xl:text-lg">
@@ -109,10 +109,10 @@ const Gallery = () => {
           </div>
 
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2 text-sm lg:text-base xl:text-lg font-medium text-gray-600">
+          <div className="flex flex-wrap gap-2 text-sm lg:text-base xl:text-lg font-medium text-gray-600 w3-animate-right">
             {categories.map((cat, idx) => (
               <React.Fragment key={cat}>
-                {idx > 0 && <span className="text-gray-400">|</span>}
+                {idx > 0 && <span className="text-gray-400">||</span>}
                 <button
                   onClick={() => setActiveTab(cat)}
                   className={`${
@@ -144,7 +144,9 @@ const Gallery = () => {
           {filteredPhotos.map((photo, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded shadow-sm ${photo.span}`}
+              className={`relative overflow-hidden rounded shadow-2xl shadow-[#3F014733] ${photo.span}`}
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               <img
                 src={photo.src}
@@ -163,7 +165,11 @@ const Gallery = () => {
 
         {/* Floating Button */}
 
-        <button className="flex items-center justify-center gap-2 px-6 py-2 rounded-full text-[10px] tab:text-xs text-white border-[#B79D52] mt-4 fixed bottom-4 animate-pulses backdrop-blur-sm backdrop-invert mix-blend-differences bg-[#852F72]/60 z-40 right-2 md:right-4 transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] h-16 w-16 tab:h-20 tab:w-20 lg:h-24 lg:w-24 z-10">
+        <button
+          className="flex items-center justify-center gap-2 px-6 py-2 rounded-full text-[10px] tab:text-xs text-white border-[#B79D52] mt-4 fixed bottom-4 animate-pulses backdrop-blur-sm backdrop-invert mix-blend-differences bg-[#852F72]/60 z-40 right-2 md:right-4 transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] h-[68px] w-[68px] tab:h-20 tab:w-20 lg:h-24 lg:w-24 z-10"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <Link to="/wishme">Send a Birthday Wish</Link>
         </button>
 
