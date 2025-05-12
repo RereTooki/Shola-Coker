@@ -164,14 +164,15 @@ const Gallery = () => {
         </div>
 
         {/* Floating Button */}
-
-        <button
-          className="flex items-center justify-center gap-2 px-6 py-2 rounded-full text-[10px] tab:text-xs text-white border-[#B79D52] mt-4 fixed bottom-4 animate-pulses backdrop-blur-sm backdrop-invert mix-blend-differences bg-[#852F72]/60 z-40 right-2 md:right-4 transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] h-[68px] w-[68px] tab:h-20 tab:w-20 lg:h-24 lg:w-24 z-10"
-          data-aos="fade-up"
-          data-aos-duration="1200"
-        >
-          <Link to="/wishme">Send a Birthday Wish</Link>
-        </button>
+        <Link to="/wishme">
+          <button
+            className="flex items-center justify-center gap-2 px-6 py-2 rounded-full text-[10px] tab:text-xs text-white border-[#B79D52] mt-4 fixed bottom-4 animate-pulses backdrop-blur-sm backdrop-invert mix-blend-differences bg-[#852F72]/60 z-40 right-2 md:right-4 transition ease-in-out duration-500 delay-10 cursor-pointer hover:scale-[1.04] h-[68px] w-[68px] tab:h-20 tab:w-20 lg:h-24 lg:w-24 z-10"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Send a Birthday Wish
+          </button>
+        </Link>
 
         {/* <button className="fixed bottom-6 right-6 bg-[#7E1465] text-white px-4 py-2 rounded-full shadow-lg  text-sm">
           Send a birthday wish

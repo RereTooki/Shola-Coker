@@ -58,6 +58,32 @@
   }
 }
 
+.w3-animate-bottom {
+  position: relative;
+  animation: animatebottom 1.3s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.w3-animate-zoom {
+  animation: animatezoom 1.4s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /* DefaultScrollbars */
 
 .scroll::-webkit-scrollbar {
@@ -127,13 +153,7 @@
 
   backdrop-filter: blur(140px);
 }
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .aboutMeGrad {
-    background-image: url("./assets/images/bg1.png");
-    background-size: cover;
-  }
-}
+
 /**/
 @media (min-width: 566px) {
   /*Tablets and above*/
@@ -147,12 +167,6 @@
     background: linear-gradient(#ffe3f933, #ffe3f933),
       url(./assets/images/bg1.png);
   }
-}
-
-/* Ensure dark mode styles also apply when the .dark class is present */
-.dark .aboutMeGrad {
-  background-image: url("./assets/images/bg1.png");
-  background-size: cover;
 }
 
 @media (min-width: 566px) {

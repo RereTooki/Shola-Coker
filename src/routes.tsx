@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Homepage from "./components/Homepage";
+import BirthdayWishForm from "./components/BirthdayWishForm";
 
 const router = createBrowserRouter([
   {
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/wishme", // Root Route
-    element: <Homepage />,
+    element: <BirthdayWishForm />,
   },
   // {
   //   path: "/joinUs", // about Page
